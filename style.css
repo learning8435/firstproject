@@ -1,0 +1,749 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 30px;
+}
+
+body {
+  font-family: "Raleway", serif;
+}
+
+.header-box {
+  width: 100%;
+  float: left;
+  z-index: 999;
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+}
+
+.header-box.sticky-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.header-box.sticky-header .header {
+  background-color: white;
+}
+
+.header-box.sticky-header .container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.header-box.sticky-header .header .menu ul li a {
+  color: black;
+}
+
+.header-box.sticky-header .header .logo img {
+  filter: invert(0);
+}
+
+.header-box {
+  width: 100%;
+  float: left;
+  border-top: 1px solid #e1e3e1;
+}
+.header-box .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-box .header .logo {
+  width: 100%;
+  float: left;
+}
+.header-box .header .logo img {
+  width: 111px;
+  filter: invert(1);
+}
+.header-box .header .menu {
+  width: 100%;
+  float: left;
+}
+.header-box .header .menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-box .header .menu ul li {
+  list-style: none;
+  position: relative;
+  padding: 20px 0;
+}
+.header-box .header .menu ul li:hover ul.dropdown {
+  transform: scaleY(1);
+  transition: 0.5s;
+}
+.header-box .header .menu ul li ul.dropdown {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  width: 250px;
+  background-color: #faf9f5;
+  display: inline-block;
+  padding: 25px 20px;
+  transform-origin: top;
+  transform: scaleY(0);
+}
+.header-box .header .menu ul li ul.dropdown.dropdown1 {
+  width: 65px;
+  left: -25px;
+}
+.header-box .header .menu ul li ul.dropdown li {
+  padding: 6px;
+}
+.header-box .header .menu ul li ul.dropdown a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.header-box .header .menu ul li ul.dropdown a:hover {
+  color: #c37253;
+}
+.header-box .header .menu ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.header-box .header .menu ul li a:hover {
+  color: #c37253;
+}
+.header-box .header .menu ul li a i {
+  font-size: 20px !important;
+  vertical-align: top;
+}
+
+.banner-box {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+.banner-box .banner-inner {
+  width: 100%;
+  float: left;
+}
+.banner-box .banner-inner .slick-prev {
+  left: 30px;
+  z-index: 99;
+  content: "";
+}
+.banner-box .banner-inner .slick-prev:before {
+  content: "\f104";
+  font-size: 50px;
+  color: #e1e3e1;
+  font-family: fontawesome;
+}
+.banner-box .banner-inner .slick-next {
+  right: 30px;
+  z-index: 99;
+  content: "";
+}
+.banner-box .banner-inner .slick-next:before {
+  content: "\f105";
+  font-size: 50px;
+  color: #e1e3e1;
+  font-family: fontawesome;
+}
+.banner-box .banner-inner .banner {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.banner-box .banner-inner .banner .banner-image {
+  width: 100%;
+  float: left;
+}
+.banner-box .banner-inner .banner .banner-image img {
+  width: 100%;
+  height: 550px;
+}
+.banner-box .banner-inner .banner .banner-text {
+  position: absolute;
+  bottom: 100px;
+  left: 90px;
+}
+.banner-box .banner-inner .banner .banner-text h1 {
+  font-family: "Cormorant", serif;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 70px;
+}
+.banner-box .banner-inner .banner .banner-text p {
+  max-width: 515px;
+  color: rgb(255, 255, 255);
+  font-family: "Josefin Sans", serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 34px;
+}
+
+.breakfastbox {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+.breakfastbox .breakfast {
+  width: 100%;
+  float: left;
+}
+.breakfastbox .breakfast.breakfast1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.breakfastbox .breakfast h2 {
+  font-family: "Cormorant", serif;
+  color: #000;
+  font-size: 43px;
+  font-weight: 500;
+}
+.breakfastbox .breakfast h1 {
+  font-family: "Cormorant", serif;
+  color: #000;
+  font-size: 35px;
+  font-weight: 500;
+}
+.breakfastbox .breakfast a {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.25em;
+  color: #000;
+  margin: 13px 0;
+  float: left;
+}
+.breakfastbox .breakfast a:hover {
+  color: #c37253;
+}
+.breakfastbox .breakfast p {
+  margin-top: 10px;
+  font-size: 21px;
+  color: #4d4d4d;
+  line-height: 35px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  font-family: "Josefin Sans", serif;
+}
+.breakfastbox .breakfast .break-text {
+  width: 32%;
+  float: left;
+  background-color: #f6f3ea;
+  padding: 15px 104px;
+}
+.breakfastbox .breakfast .break-text.break-text1 {
+  padding: 40px;
+  background-image: url(images/h4-img-1\ \(1\).jpg);
+}
+.breakfastbox .breakfast .break-text.break-text2 {
+  height: 400px;
+  background-size: contain;
+  background-image: url(images/h4-map-image.jpg);
+}
+.breakfastbox .breakfast .break-text .inputbox {
+  width: 100%;
+  float: left;
+  margin-top: 11px;
+  margin-bottom: 23px;
+}
+.breakfastbox .breakfast .break-text .inputbox span {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  width: 100%;
+  float: left;
+  padding-bottom: 7px;
+}
+.breakfastbox .breakfast .break-text .inputbox input {
+  padding: 8px 33px;
+  color: #4d4d4d;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: inherit;
+}
+.breakfastbox .breakfast .break-text .inputbox input:focus {
+  outline: none;
+}
+.breakfastbox .breakfast .break-text .inputbox .box {
+  font-size: 14px;
+  padding: 13px 16px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+.breakfastbox .breakfast .break-text .inputbox .box p {
+  color: #4d4d4d;
+}
+.breakfastbox .breakfast .break-text .booking {
+  padding: 13px 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  margin-bottom: 11px;
+  position: relative;
+}
+.breakfastbox .breakfast .break-text .booking button {
+  background: transparent;
+  font-size: 14px;
+  border: none;
+  color: #4d4d4d;
+  text-transform: uppercase;
+}
+.breakfastbox .breakfast .break-text .booking button:hover .pcolor {
+  width: 100%;
+  transition: 0.5s;
+}
+.breakfastbox .breakfast .break-text .booking button:hover {
+  color: white;
+}
+.breakfastbox .breakfast .break-text .booking button span {
+  font-size: 14px;
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 999;
+}
+.breakfastbox .breakfast .break-text .booking button .pcolor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  width: 0%;
+  transition: 0.5s;
+  background-color: #b56953;
+}
+.breakfastbox .breakfast .break-image {
+  width: 68%;
+  float: left;
+  padding-left: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.breakfastbox .breakfast .break-image.break-image1 {
+  padding-left: 0;
+  padding-right: 30px;
+}
+.breakfastbox .breakfast .break-image .break-imagefast {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+.breakfastbox .breakfast .break-image .break-imagefast:hover img {
+  transform: translateX(0px);
+  transition: 0.5s;
+}
+.breakfastbox .breakfast .break-image img {
+  width: 105%;
+  height: 400px;
+  transition: 0.5s;
+  transform: translateX(-10px);
+}
+.breakfastbox .breakfast .break-image .image-text {
+  position: absolute;
+  left: 30px;
+  bottom: 100px;
+  background-color: #f6f3ea;
+  width: 300px;
+  padding: 50px 50px 42px 36px;
+  transition: 0.5s;
+}
+.breakfastbox .breakfast .break-image .image-text:hover {
+  padding-left: 45px;
+  transition: 0.5s;
+}
+.breakfastbox .breakfast .break-image .image-text.image-text1 {
+  left: 0;
+}
+
+.breakfastbox .break-text3 {
+  text-align: center;
+  background-color: #f6f3ea;
+  background-image: none !important;
+}
+
+.breakfastbox .break-text3 a {
+  margin: 0;
+  float: none;
+  text-align: center;
+}
+
+.aboutbox {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+.aboutbox .about {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.aboutbox .about img {
+  width: 100%;
+  height: 600px;
+}
+.aboutbox .about .about-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 200px;
+  margin: auto;
+  width: 700px;
+  background-color: #f6f3ea;
+  padding: 60px 20px;
+}
+.aboutbox .about .about-text .about-image {
+  width: 16.6%;
+  text-align: center;
+  float: left;
+}
+.aboutbox .about .about-text .about-image .about-image1 {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.aboutbox .about .about-text .about-image .about-image1:hover .circle {
+  display: block;
+  transform: 0.5s;
+}
+.aboutbox .about .about-text .about-image .about-image1:hover .about-icon {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+.aboutbox .about .about-text .about-image .about-image1 .circle {
+  position: absolute;
+  top: -35px;
+  left: 6px;
+  transition: 0.5s;
+  display: none;
+}
+.aboutbox .about .about-text .about-image .about-image1 .circle span {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+.aboutbox .about .about-text .about-image .about-image1 .about-icon {
+  width: 100%;
+  float: left;
+  text-align: center;
+  position: relative;
+  z-index: 99;
+  transition: 0.5s;
+}
+.aboutbox .about .about-text .about-image .about-image1 .about-btn {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+.aboutbox .about .about-text .about-image .about-image1 .about-btn a {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.25em;
+  color: #000;
+  margin: 13px 0;
+  float: left;
+  max-width: 92px;
+  text-align: center;
+  line-height: 20px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+.aboutbox .about .about-text .about-image .about-image1 .about-btn a:hover {
+  color: #c37253;
+}
+
+.ourbox {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+.ourbox .our {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.ourbox .our h1 {
+  font-family: "Cormorant", serif;
+  color: #000;
+  font-size: 43px;
+  font-weight: 500;
+}
+.ourbox .our .our-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 200px;
+  margin: auto;
+  width: 1100px;
+  background-color: #f6f3ea;
+  padding: 65px 30px;
+}
+.ourbox .our .our-text .svg-box {
+  width: 50%;
+  float: left;
+}
+.ourbox .our .our-text .svg-box .svg-box1 {
+  width: 100%;
+  float: left;
+  display: flex;
+}
+.ourbox .our .our-text .svg-box .svg-box1.svg-box2 {
+  padding-left: 20px;
+}
+.ourbox .our .our-text .svg-box .svg-box1 span {
+  font-weight: 400;
+  padding-right: 10px;
+}
+.ourbox .our .our-text .svg-box .svg-box1 .svg-input {
+  width: 100%;
+  float: left;
+  margin-top: 16px;
+  width: 65%;
+}
+.ourbox .our .our-text .svg-box .svg-box1 .svg-input input {
+  font-family: "Josefin Sans", serif;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 6px;
+  color: #4d4d4d;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+.ourbox .our .our-text .svg-box .svg-box1 .book {
+  width: 35%;
+  float: left;
+}
+.ourbox .our .our-text .svg-box .svg-box1 .book .booking {
+  padding: 13px 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  margin-bottom: 11px;
+  position: relative;
+}
+.ourbox .our .our-text .svg-box .svg-box1 .book .booking button {
+  background: transparent;
+  font-size: 14px;
+  border: none;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+}
+.ourbox .our .our-text .svg-box .svg-box1 .book .booking button:hover .pcolor {
+  width: 100%;
+  background-color: #b56953;
+  transition: 0.5s;
+}
+.ourbox .our .our-text .svg-box .svg-box1 .book .booking button:hover {
+  color: white;
+}
+.ourbox .our .our-text .svg-box .svg-box1 .book .booking button span {
+  font-size: 14px;
+  font-size: 12.5px;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 999;
+}
+.ourbox .our .our-text .svg-box .svg-box1 .book .booking button .pcolor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  width: 0%;
+  transition: 0.5s;
+}
+.ourbox .our img {
+  width: 100%;
+  height: 600px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.footer-box {
+  width: 100%;
+  float: left;
+}
+.footer-box .footer {
+  width: 100%;
+  float: left;
+  background-color: #faf9f5;
+  padding: 100px 70px;
+}
+.footer-box .footer h4 {
+  font-family: "Cormorant", serif;
+  color: #000;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+.footer-box .footer p {
+  font-size: 17px;
+  color: #4d4d4d;
+  line-height: 28px;
+  font-weight: 300;
+  font-family: "Josefin Sans", serif;
+}
+.footer-box .footer .footer-ab {
+  width: 40%;
+  float: left;
+}
+.footer-box .footer .footer-ab .footer-ab1 {
+  width: 100%;
+  float: left;
+}
+.footer-box .footer .footer-ab .footer-ab1 p {
+  max-width: 358px;
+}
+.footer-box .footer .footer-ab .footer-ab1 .ft-image {
+  width: 100%;
+  float: left;
+  margin-top: 45px;
+}
+.footer-box .footer .footer-ab .footer-ab1 .ft-image img {
+  max-width: 100%;
+}
+.footer-box .footer .footer1 {
+  width: 20%;
+  float: left;
+}
+.footer-box .footer .footer1.ft-max p {
+  max-width: 203px;
+}
+.footer-box .footer .footer1.ft-max ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  margin-top: 35px;
+}
+.footer-box .footer .footer1.ft-max ul li {
+  list-style: none;
+}
+.footer-box .footer .footer1.ft-max ul li:hover i {
+  color: #b56953;
+  transition: 0.5s;
+}
+.footer-box .footer .footer1.ft-max ul li a i {
+  font-size: 23px;
+  color: #c5c0b1;
+}
+.footer-box .footer .footer1.ft-max1 ul {
+  gap: 25px;
+}
+.footer-box .footer .footer1.ft-max1 ul li a i {
+  color: #000;
+}
+.footer-box .footer .footer1 .footer2 {
+  width: 100%;
+  float: left;
+}
+.footer-box .footer .footer1 .footer2 ul li {
+  display: flex;
+}
+.footer-box .footer .footer1 .footer2 ul li p {
+  font-size: 17px;
+  color: #4d4d4d;
+  line-height: 28px;
+  font-weight: 300;
+  font-family: "Josefin Sans", serif;
+}
+.footer-box .footer .footer1 .footer2 ul li p a {
+  text-decoration: none;
+  color: #000;
+}
+.footer-box .footer .footer1 .footer2 ul li p a:hover {
+  color: #c37253;
+}
+.footer-box .footer .footer1 .footer2 ul li.bst a {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.25em;
+  color: #000;
+  margin-top: 35px;
+  float: left;
+}
+.footer-box .footer .footer1 .footer2 ul li.bst a:hover {
+  color: #c37253;
+}
+
+.copyright {
+  width: 100%;
+  float: left;
+}
+.copyright .copyright1 {
+  width: 100%;
+  float: left;
+  text-align: center;
+  background-color: #f3ece8;
+  padding: 10px;
+}
+.copyright .copyright1 p {
+  font-size: 17px;
+  color: #4d4d4d;
+  line-height: 28px;
+  font-weight: 300;
+  font-family: "Josefin Sans", serif;
+  font-size: 14px;
+}
+
+.breakfastbox .ad {
+  padding: 6px 16px !important;
+}
+
+.breakfastbox .ad p {
+  margin: 0;
+  font-size: 17px;
+}
+
+/*# sourceMappingURL=style.css.map */
